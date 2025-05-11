@@ -1,0 +1,48 @@
+# Core Web Stack
+fastapi
+uvicorn
+python-multipart
+python-jose
+passlib
+python-dotenv
+pydantic
+pydantic-settings
+
+# Database
+asyncpg
+sqlalchemy
+alembic
+psycopg2-binary
+
+# AI/ML Stack
+transformers
+torch
+sentence-transformers
+numpy
+scipy
+
+# Quantum Computing (Optional)
+qiskit
+qiskit-aer
+qiskit-ibmq-provider
+
+# Voice Processing
+SpeechRecognition
+pydub
+librosa
+soundfile
+resampy
+
+# Visualization
+matplotlib
+plotly
+seaborn
+
+# Utilities
+python-dateutil
+typing-extensions
+tqdm
+
+# Security
+cryptography
+bcrypt

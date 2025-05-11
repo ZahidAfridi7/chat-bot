@@ -1,4 +1,7 @@
 from qiskit import QiskitError
+from qiskit import QuantumCircuit
+from qiskit import execute
+from qiskit.exceptions import QuantumExecutionError
 
 class QuantumSecurity:
     MAX_QUBITS = 16  # Prevent resource exhaustion

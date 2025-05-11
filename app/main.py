@@ -1,9 +1,6 @@
-from fastapi import FastAPI,Depends
+from fastapi import FastAPI
 from app.api.api import api_router
 from app.core.config import settings
-from fastapi.security import OAuth2PasswordBearer
-
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/token")
 
 app = FastAPI(title=settings.PROJECT_NAME,
             version=settings.VERSION)

@@ -1,11 +1,11 @@
-from qiskit import transpile
-from qiskit.providers.aer import AerSimulator
+from qiskit import QuantumCircuit, transpile  
+from qiskit.providers import AerSimulator  
+from typing import Dict
 
 class QuantumOptimizer:
     def __init__(self):
         self.optimized_backend = AerSimulator()
-        self.cache = {}  # Circuit caching
-
+        self.cache: Dict[str, QuantumCircuit] = {}  
     async def get_optimized_circuit(self, circuit: QuantumCircuit) -> QuantumCircuit:
         """Applies Qiskit's optimization passes"""
         cache_key = circuit.qasm()
